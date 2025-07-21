@@ -1,0 +1,28 @@
+# Assets para o Site Palermo Advocacia
+
+Esta pasta deve conter as seguintes imagens:
+
+## Imagens Principais:
+- logo.png - Logo do escritório (40x40px recomendado)
+- hero-lawyer.jpg - Imagem principal do advogado (800x600px recomendado)
+- about-office.jpg - Imagem do escritório (600x400px recomendado)
+
+## Imagens da Equipe:
+- lawyer-1.jpg - Dr. João Palermo (400x500px)
+- lawyer-2.jpg - Dra. Maria Silva (400x500px)
+- lawyer-3.jpg - Dr. Carlos Santos (400x500px)
+
+## Outros:
+- favicon.ico - Favicon do site (32x32px)
+- og-image.jpg - Imagem para redes sociais (1200x630px)
+
+## Recomendações:
+- Use imagens profissionais e de alta qualidade
+- Otimize as imagens para web (formato JPG/PNG)
+- Mantenha o tamanho dos arquivos abaixo de 500KB cada
+- Use cores que combinem com o tema do site (azul escuro e vermelho)
+
+## Cores do Tema:
+- Azul escuro: #1a365d
+- Vermelho: #e53e3e
+- Cinza claro: #f7fafc 

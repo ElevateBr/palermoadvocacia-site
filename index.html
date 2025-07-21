@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palermo Advocacia - Escritório de Advocacia Profissional</title>
+    <meta name="description" content="Palermo Advocacia - Escritório de advocacia especializado em direito civil, trabalhista e empresarial. Atendimento personalizado e resultados garantidos.">
+    <meta name="keywords" content="advocacia, advogado, direito civil, direito trabalhista, direito empresarial, Palermo Advocacia">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://palermoadvocacia.com/">
+    <meta property="og:title" content="Palermo Advocacia - Escritório de Advocacia Profissional">
+    <meta property="og:description" content="Especialistas em direito civil, trabalhista e empresarial. Atendimento personalizado e resultados garantidos.">
+    <meta property="og:image" content="https://palermoadvocacia.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://palermoadvocacia.com/">
+    <meta property="twitter:title" content="Palermo Advocacia - Escritório de Advocacia Profissional">
+    <meta property="twitter:description" content="Especialistas em direito civil, trabalhista e empresarial. Atendimento personalizado e resultados garantidos.">
+    <meta property="twitter:image" content="https://palermoadvocacia.com/images/og-image.jpg">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <style>
+      @media (max-width: 600px) {
+        .language-selector { left: 12px !important; right: auto !important; top: 8px !important; }
+        .language-selector select { padding: 6px 10px !important; font-size: 0.95rem !important; }
+      }
+    </style>
+    <div class="language-selector" style="position:fixed;top:24px;right:32px;left:auto;z-index:9999;">
+        <select id="langSelect" style="background:#fff;border:1.5px solid #1a365d;border-radius:24px;padding:8px 20px;font-family:'Inter',sans-serif;font-size:1rem;color:#1a365d;box-shadow:0 2px 12px rgba(26,54,93,0.08);outline:none;cursor:pointer;transition:box-shadow .2s;">
+            <option value="pt">🇧🇷 Português</option>
+            <option value="en">🇺🇸 English</option>
+            <option value="es">🇪🇸 Español</option>
+            <option value="it">🇮🇹 Italiano</option>
+        </select>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo.png" alt="Palermo Advocacia" class="logo">
+                    <span class="logo-text"><span class="accent-letter">P</span>alermo <span class="accent-letter">A</span>dvocacia</span>
+                </div>
+                
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="nav-link" data-i18n="menu_home">Início</a>
+                    <a href="#about" class="nav-link" data-i18n="menu_about">Sobre</a>
+                    <a href="#services" class="nav-link" data-i18n="menu_services">Áreas de Atuação</a>
+                    <a href="#team" class="nav-link" data-i18n="menu_team">Equipe</a>
+                    <a href="#contact" class="nav-link" data-i18n="menu_contact">Contato</a>
+                </div>
+                
+                <div class="nav-cta">
+                    <a href="#contact" class="btn btn-primary" data-i18n="cta_schedule">Agende uma Consulta</a>
+                </div>
+                
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_title">Áreas de Atuação Jurídica Especializadas</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Mais de 20 anos de experiência em Direito de Família, Sucessões, Blindagem Patrimonial, Imobiliário, Contratual e Responsabilidade Civil. Atendimento personalizado e soluções jurídicas eficazes para proteger seus direitos.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i>
+                        <span data-i18n="cta_schedule">Agende uma Consulta</span>
+                    </a>
+                    <a href="#services" class="btn btn-secondary btn-large">
+                        <i class="fas fa-gavel"></i>
+                        <span data-i18n="cta_know_specialties">Conheça Nossas Especialidades</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label" data-i18n="stat_cases">Casos Resolvidos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label" data-i18n="stat_years">Anos de Experiência</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label" data-i18n="stat_success">Taxa de Sucesso</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="about_title">Sobre a Palermo Advocacia</h2>
+                <p class="section-subtitle" data-i18n="about_subtitle">Compromisso com a excelência e resultados</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 data-i18n="about_mission_title">Nossa Missão</h3>
+                    <p data-i18n="about_mission_text">
+                        A Palermo Advocacia nasceu da paixão pelo direito e do compromisso em oferecer 
+                        soluções jurídicas eficazes e personalizadas. Com mais de 20 anos de experiência, 
+                        nossa equipe de advogados especializados está dedicada a proteger seus direitos 
+                        e buscar os melhores resultados para seus clientes.
+                    </p>
+                    
+                    <h3 data-i18n="about_values_title">Nossos Valores</h3>
+                    <ul class="values-list">
+                        <li data-i18n="about_value_ethics"><i class="fas fa-check"></i> Ética e transparência em todas as relações</li>
+                        <li data-i18n="about_value_excellence"><i class="fas fa-check"></i> Excelência técnica e profissional</li>
+                        <li data-i18n="about_value_personalized"><i class="fas fa-check"></i> Atendimento personalizado e humanizado</li>
+                        <li data-i18n="about_value_results"><i class="fas fa-check"></i> Compromisso com resultados</li>
+                        <li data-i18n="about_value_innovation"><i class="fas fa-check"></i> Inovação e atualização constante</li>
+                    </ul>
+                </div>
+                
+                <div class="about-image">
+                    <img src="images/about-office.jpg" alt="Escritório Palermo Advocacia" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="services_title">Áreas de Atuação</h2>
+                <p class="section-subtitle" data-i18n="services_subtitle">Especialidades jurídicas para atender suas necessidades</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-i18n="service_family_title">Direito de Família</h3>
+                    <p data-i18n="service_family_desc">
+                        Soluções ágeis e humanizadas para divórcios, guarda, pensão alimentícia, visitas, união estável, partilhas e pactos antenupciais. Proteja seus direitos e garanta segurança para sua família.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="service_family_divorce">Divórcios</li>
+                        <li data-i18n="service_family_guard">Guarda e alimentos</li>
+                        <li data-i18n="service_family_visits">Visitas</li>
+                        <li data-i18n="service_family_union">União estável</li>
+                        <li data-i18n="service_family_sharing">Partilhas</li>
+                        <li data-i18n="service_family_pact">Pactos antenupciais</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h3 data-i18n="service_succession_title">Direito das Sucessões</h3>
+                    <p data-i18n="service_succession_desc">
+                        Atendimento completo em inventários, testamentos, planejamento sucessório e disputas hereditárias. Traga tranquilidade e segurança para o futuro da sua família.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="service_succession_inventory">Inventários</li>
+                        <li data-i18n="service_succession_testament">Testamentos</li>
+                        <li data-i18n="service_succession_planning">Planejamento sucessório</li>
+                        <li data-i18n="service_succession_disputes">Disputas hereditárias</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-i18n="service_protection_title">Blindagem Patrimonial</h3>
+                    <p data-i18n="service_protection_desc">
+                        Estruture seu patrimônio de forma segura e estratégica. Criamos soluções jurídicas para proteger bens pessoais e empresariais contra riscos e imprevistos.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="service_protection_structures">Estruturas jurídicas protetivas</li>
+                        <li data-i18n="service_protection_personal">Blindagem de bens pessoais</li>
+                        <li data-i18n="service_protection_business">Blindagem de bens empresariais</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 data-i18n="service_realestate_title">Direito Imobiliário</h3>
+                    <p data-i18n="service_realestate_desc">
+                        Assessoria completa em compra e venda de imóveis, regularização, usucapião, contratos de locação, ações possessórias e questões condominiais. Segurança e agilidade em todas as etapas.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="service_realestate_buy">Compra e venda de imóveis</li>
+                        <li data-i18n="service_realestate_regularization">Regularização registral</li>
+                        <li data-i18n="service_realestate_usucapion">Usucapião</li>
+                        <li data-i18n="service_realestate_rent">Contratos de locação</li>
+                        <li data-i18n="service_realestate_possessory">Ações possessórias</li>
+                        <li data-i18n="service_realestate_condo">Questões condominiais</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 data-i18n="service_contract_title">Direito Contratual</h3>
+                    <p data-i18n="service_contract_desc">
+                        Elaboração, revisão e análise de contratos civis e empresariais, garantindo segurança jurídica e prevenindo litígios. Conte com especialistas para proteger seus interesses.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="service_contract_civil">Contratos civis</li>
+                        <li data-i18n="service_contract_business">Contratos empresariais</li>
+                        <li data-i18n="service_contract_review">Revisão e análise contratual</li>
+                        <li data-i18n="service_contract_safety">Segurança jurídica</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 data-i18n="service_liability_title">Responsabilidade Civil</h3>
+                    <p data-i18n="service_liability_desc">
+                        Atuação estratégica em casos de indenização por danos materiais e morais, em relações familiares, contratuais, de consumo, acidentes e outras situações. Busque sua reparação com quem entende do assunto.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="service_liability_material">Indenização por danos materiais</li>
+                        <li data-i18n="service_liability_moral">Indenização por danos morais</li>
+                        <li data-i18n="service_liability_family">Relações familiares e contratuais</li>
+                        <li data-i18n="service_liability_accidents">Acidentes e consumo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="team_title">Nossa Equipe</h2>
+                <p class="section-subtitle" data-i18n="team_subtitle">Advogados especializados e experientes</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/camila.jpg" alt="Camila Palermo" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3>Camila Palermo</h3>
+                        <p class="member-title" data-i18n="team_camila_title">Sócia Fundadora</p>
+                        <p class="member-specialty" data-i18n="team_camila_specialty">Direito Civil e Empresarial</p>
+                        <p class="member-description" data-i18n="team_camila_desc">
+                            Especialista em direito civil e empresarial com mais de 20 anos de experiência. 
+                            Formada pela Universidade de São Paulo e pós-graduada em Direito Empresarial.
+                            Comprometida em oferecer soluções jurídicas eficazes e personalizadas.
+                        </p>
+                        <div class="member-credentials">
+                            <span>OAB/SP 123.456</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/daniel.jpg" alt="Daniel da Paiva Chaves" class="member-img">
+                    </div>
+                    <div class="member-info">
+                        <h3>Daniel da Paiva Chaves</h3>
+                        <p class="member-title" data-i18n="team_daniel_title">Sócio</p>
+                        <p class="member-specialty" data-i18n="team_daniel_specialty">Direito Trabalhista e Civil</p>
+                        <p class="member-description" data-i18n="team_daniel_desc">
+                            Especialista em direito trabalhista e civil com vasta experiência em defesa dos direitos. 
+                            Mestrado em Direito do Trabalho e pós-graduado em Direito Civil.
+                        </p>
+                        <div class="member-credentials">
+                            <span>OAB/SP 234.567</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 data-i18n="cta_title">Precisa de Ajuda Jurídica?</h2>
+                <p data-i18n="cta_desc">Nossa equipe de advogados especializados está pronta para defender seus direitos e oferecer as melhores soluções jurídicas para seu caso.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i>
+                        <span data-i18n="cta_schedule2">Agende sua Consulta</span>
+                    </a>
+                    <a href="https://wa.me/5524992655618" class="btn btn-secondary btn-large" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        +55 24 99265-5618
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="contact_title">Entre em Contato</h2>
+                <p class="section-subtitle" data-i18n="contact_subtitle">Agende sua consulta e tire suas dúvidas com nossos especialistas</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact_address_title">Endereço</h3>
+                            <p data-i18n="contact_address">Rua Vinte e Nove de Setembro, 53, 2 andar, Campos Elíseos Resende RJ</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact_phone_title">Telefone / WhatsApp</h3>
+                            <p>
+                                <a href="https://wa.me/5524992655618" target="_blank" style="text-decoration:none;color:inherit;">
+                                    <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+                                    +55 24 99265-5618
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact_email_title">E-mail</h3>
+                            <p data-i18n="contact_email">escritorio@palermoadvocacia.adv.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3 data-i18n="contact_hours_title">Horário de Atendimento</h3>
+                            <p data-i18n="contact_hours">Segunda a Sexta: 8h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map" style="flex:1; min-width:300px; max-width:500px; margin-left:32px;">
+                    <iframe
+                        width="100%"
+                        height="400"
+                        frameborder="0"
+                        style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCt841lvaexjn2D0fjGmlFkljtck8d4JYs&q=Rua+Vinte+e+Nove+de+Setembro,+53,+Campos+Elíseos+Resende+RJ&zoom=17" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Palermo Advocacia" class="footer-logo-img">
+                        <span class="footer-logo-text">Palermo Advocacia</span>
+                    </div>
+                    <p class="footer-description">
+                        Excelência jurídica ao seu alcance. Especialistas em direito civil, 
+                        trabalhista e empresarial com foco em resultados.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer_areas_title">Áreas de Atuação</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services" data-i18n="footer_areas_business">Direito Empresarial</a></li>
+                        <li><a href="#services" data-i18n="footer_areas_labor">Direito Trabalhista</a></li>
+                        <li><a href="#services" data-i18n="footer_areas_civil">Direito Civil</a></li>
+                        <li><a href="#services" data-i18n="footer_areas_realestate">Direito Imobiliário</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer_links_title">Links Úteis</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about" data-i18n="footer_links_about">Sobre Nós</a></li>
+                        <li><a href="#team" data-i18n="footer_links_team">Nossa Equipe</a></li>
+                        <li><a href="#contact" data-i18n="footer_links_contact">Contato</a></li>
+                        <li><a href="#" data-i18n="footer_links_privacy">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 data-i18n="footer_contact_title">Contato</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_contact_address">Rua Vinte e Nove de Setembro, 53, 2 andar, Campos Elíseos Resende RJ</span></p>
+                        <p><i class="fas fa-phone"></i> <a href="https://wa.me/5524992655618" target="_blank" style="text-decoration:none;color:inherit;"><i class="fab fa-whatsapp" style="color:#25D366;"></i> <span data-i18n="footer_contact_phone">+55 24 99265-5618</span></a></p>
+                        <p><i class="fas fa-envelope"></i> <span data-i18n="footer_contact_email">escritorio@palermoadvocacia.adv.br</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer_rights">&copy; 2024 Palermo Advocacia. Todos os direitos reservados.</p>
+                <p data-i18n="footer_oab">OAB/SP 123.456</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5524992655618" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 

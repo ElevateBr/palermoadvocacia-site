@@ -1,0 +1,35 @@
+FOTOS DA EQUIPE - PALERMO ADVOCACIA
+
+IMAGENS NECESSÁRIAS:
+
+1. camila.jpg
+   - Localização: images/camila.jpg
+   - Descrição: Foto da Camila Palermo
+   - Especificações recomendadas:
+     * Resolução: 400x500px (proporção 4:5)
+     * Formato: JPG
+     * Qualidade: Alta (para web)
+     * Fundo: Profissional, escritório ou fundo neutro
+     * Vestimenta: Traje executivo/formal
+
+2. daniel.jpg
+   - Localização: images/daniel.jpg
+   - Descrição: Foto do Daniel da Paiva Chaves
+   - Especificações recomendadas:
+     * Resolução: 400x500px (proporção 4:5)
+     * Formato: JPG
+     * Qualidade: Alta (para web)
+     * Fundo: Profissional, escritório ou fundo neutro
+     * Vestimenta: Traje executivo/formal
+
+NOTAS IMPORTANTES:
+- As fotos devem ter boa qualidade e resolução
+- Fundo neutro ou profissional é preferível
+- Vestimenta formal/executiva
+- Expressão profissional e confiável
+- As imagens serão exibidas em cards de 250px de altura
+- O CSS aplica object-fit: cover, então as imagens serão cortadas para caber no espaço
+
+ESTRUTURA ATUAL DA EQUIPE:
+1. Camila Palermo - Sócia Fundadora (Direito Civil e Empresarial)
+2. Daniel da Paiva Chaves - Sócio (Direito Trabalhista e Civil) 

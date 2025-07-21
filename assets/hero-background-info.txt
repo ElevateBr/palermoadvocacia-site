@@ -1,0 +1,58 @@
+# Imagem de Fundo da Seção Hero
+
+## Arquivo: images/hero-lawyer.png
+
+### Especificações Técnicas:
+- **Tamanho recomendado**: 1920x1080px (Full HD)
+- **Formato**: PNG (recomendado para melhor qualidade)
+- **Tamanho do arquivo**: Máximo 500KB
+- **Qualidade**: Alta resolução, mas otimizada para web
+
+### Características da Imagem:
+- **Tema**: Advogado ou escritório de advocacia
+- **Estilo**: Profissional e moderno
+- **Cores**: Tons neutros ou que combinem com preto (#000000) e marrom (#8B6154)
+- **Composição**: 
+  - Advogado em traje formal
+  - Ou escritório moderno com mesa e livros
+  - Ou prédio de advocacia
+  - Evitar imagens muito coloridas ou distrativas
+
+### Como Funciona:
+- A imagem será exibida como fundo da seção hero
+- Terá um overlay escuro (fade) para garantir legibilidade do texto
+- O texto ficará em branco sobre o fundo escuro
+- A imagem terá efeito parallax (fixed attachment)
+
+### Exemplo de Imagem:
+- Advogado de costas olhando pela janela
+- Mesa de escritório com documentos
+- Fachada de prédio corporativo
+- Biblioteca jurídica
+
+### Posicionamento:
+- A imagem será centralizada
+- Terá `background-size: cover` para preencher toda a tela
+- Em dispositivos móveis, o parallax será desabilitado
+
+### Overlay Aplicado:
+```css
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/hero-lawyer.png');
+```
+
+Isso cria um fade preto sobre a imagem para garantir que o texto branco seja legível.
+
+### Lista de Imagens Necessárias:
+- `images/logo.png` - Logo do escritório
+- `images/hero-lawyer.png` - Imagem de fundo da seção hero
+- `images/about-office.jpg` - Imagem do escritório
+- `images/lawyer-1.jpg` - Dr. João Palermo
+- `images/lawyer-2.jpg` - Dra. Maria Silva
+- `images/lawyer-3.jpg` - Dr. Carlos Santos
+- `images/favicon.ico` - Favicon do site
+- `images/og-image.jpg` - Imagem para redes sociais
+
+### Cores do Tema:
+- **Preto**: #000000 (Cor primária)
+- **Marrom**: #8B6154 (Cor secundária)
+- **Cinza claro**: #f8f8f8 (Cor de fundo) 
