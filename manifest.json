@@ -27,18 +27,22 @@
   "scope": "/",
   "prefer_related_applications": false,
   "related_applications": [],
+  "id": "/",
+  "iarc_rating_id": "",
   "screenshots": [
     {
       "src": "images/screenshot-1.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "label": "Página inicial do site Palermo Advocacia"
     },
     {
       "src": "images/screenshot-2.png",
       "sizes": "750x1334",
       "type": "image/png",
-      "form_factor": "narrow"
+      "form_factor": "narrow",
+      "label": "Versão mobile do site Palermo Advocacia"
     }
   ]
 } 

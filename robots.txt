@@ -9,4 +9,13 @@ Crawl-delay: 1
 
 # Disallow admin areas (if any)
 Disallow: /admin/
+Disallow: /private/
+
+# Permitir indexação de imagens
+Allow: /images/
+
+# Googlebot específico
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
 Disallow: /private/ 

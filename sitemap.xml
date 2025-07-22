@@ -5,6 +5,14 @@
     <lastmod>2024-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://palermoadvocacia.com/images/logo.png</image:loc>
+      <image:caption>Logo Palermo Advocacia</image:caption>
+    </image:image>
+    <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+      <image:loc>https://palermoadvocacia.com/images/hero-lawyer.png</image:loc>
+      <image:caption>Advogado - Hero Section</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://palermoadvocacia.com/#about</loc>
