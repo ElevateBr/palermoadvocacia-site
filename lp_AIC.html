@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Indicação de Condutor | Palermo Advocacia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Evite a suspensão da sua CNH com a indicação correta de condutor. Atendimento 100% online com a Palermo Advocacia." />
+
+  <!-- Basic Open Graph -->
+  <meta property="og:title" content="Indicação de Condutor - Evite a Suspensão da CNH" />
+  <meta property="og:description" content="Atendimento jurídico especializado para indicação de condutor e defesa em processos de suspensão da CNH." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --primary: #162237;
+      --primary-dark: #0d1523;
+      --accent: #c59d5f;
+      --accent-soft: #f5efe1;
+      --bg: #f5f6f8;
+      --text: #1f2933;
+      --muted: #6b7280;
+      --danger: #b91c1c;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.22);
+      --shadow-card: 0 10px 25px rgba(15, 23, 42, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* NAV */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(11, 15, 25, 0.95);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: #e5e7eb;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .logo-mark {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      border: 1px solid rgba(229, 231, 235, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      background: radial-gradient(circle at 10% 0%, #fef8e7, #b68a3a);
+      color: #111827;
+      font-weight: 700;
+    }
+
+    .logo-sub {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      color: #9ca3af;
+    }
+
+    .nav-links {
+      display: none;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      color: #d1d5db;
+    }
+
+    .nav-links a {
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.2rem;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #facc6b, #d1b15a);
+      transition: width 0.22s ease-out;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nav-phone {
+      display: none;
+      font-size: 0.85rem;
+      color: #e5e7eb;
+    }
+
+    .btn {
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.65rem 1.4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #facc6b, #b88a3c);
+      color: #111827;
+      box-shadow: 0 10px 25px rgba(248, 202, 107, 0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 35px rgba(248, 202, 107, 0.5);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(209, 213, 219, 0.5);
+      color: #e5e7eb;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: rgba(31, 41, 55, 0.9);
+    }
+
+    .btn-sm {
+      padding: 0.5rem 1.1rem;
+      font-size: 0.85rem;
+    }
+
+    .btn-icon {
+      font-size: 1.1rem;
+    }
+
+    /* HERO */
+    .hero {
+      background: radial-gradient(circle at top left, #facc6b1f, #020617 60%);
+      color: #e5e7eb;
+      padding: 3.4rem 0 3rem;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .hero-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.22rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(249, 250, 251, 0.15);
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.45);
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 3vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-title span {
+      color: #facc6b;
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #d1d5db;
+      margin-bottom: 1.5rem;
+      max-width: 32rem;
+    }
+
+    .hero-highlight {
+      font-size: 0.9rem;
+      color: #e5e7eb;
+      background: rgba(185, 28, 28, 0.12);
+      border: 1px solid rgba(248, 113, 113, 0.4);
+      padding: 0.7rem 0.9rem;
+      border-radius: var(--radius-md);
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+    }
+
+    .hero-highlight-icon {
+      font-size: 1.1rem;
+      color: #f87171;
+      margin-top: 0.1rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-note {
+      font-size: 0.82rem;
+      color: #9ca3af;
+    }
+
+    .hero-note strong {
+      color: #e5e7eb;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.3rem;
+      margin-top: 1.8rem;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .hero-stat span:first-child {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #facc6b;
+    }
+
+    .hero-card {
+      background: radial-gradient(circle at top, #1f2937, #020617);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 1.6rem 1.8rem;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #9ca3af;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .hero-list {
+      list-style: none;
+      display: grid;
+      gap: 0.65rem;
+      font-size: 0.9rem;
+      margin-bottom: 1.3rem;
+    }
+
+    .hero-list li {
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+
+    .check {
+      font-size: 0.9rem;
+      color: #bbf7d0;
+      margin-top: 0.15rem;
+    }
+
+    .hero-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      border-top: 1px dashed rgba(148, 163, 184, 0.6);
+      padding-top: 0.8rem;
+      margin-top: 0.4rem;
+    }
+
+    .hero-stamp {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(250, 204, 21, 0.6);
+      color: #fef9c3;
+    }
+
+    /* SECTIONS BASE */
+    section {
+      padding: 3.2rem 0;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+      text-align: left;
+    }
+
+    .section-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-bottom: 0.45rem;
+      font-weight: 600;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 36rem;
+      margin-bottom: 1.7rem;
+    }
+
+    /* ALERTA */
+    .alerta {
+      background: #fef2f2;
+    }
+
+    .alerta-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .alerta-box {
+      background: #fef2f2;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(248, 113, 113, 0.4);
+      padding: 1.3rem 1.4rem;
+    }
+
+    .alerta-list {
+      list-style: none;
+      display: grid;
+      gap: 0.45rem;
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+    }
+
+    .alerta-list li {
+      display: flex;
+      gap: 0.45rem;
+    }
+
+    .alerta-icon {
+      margin-top: 0.05rem;
+      color: #b91c1c;
+    }
+
+    .alerta-bullets {
+      list-style: none;
+      display: grid;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .alerta-bullets li {
+      background: white;
+      padding: 0.7rem 0.85rem;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(248, 113, 113, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 10px 22px rgba(248, 113, 113, 0.15);
+    }
+
+    .pill {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: #fee2e2;
+      color: #7f1d1d;
+    }
+
+    /* COMO FUNCIONA */
+    .como-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .step {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 1rem 1rem;
+      box-shadow: var(--shadow-card);
+      border: 1px solid rgba(209, 213, 219, 0.7);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step-number {
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: var(--accent-soft);
+      color: #7c5a20;
+      margin-bottom: 0.6rem;
+    }
+
+    .step-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .step-text {
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    .step-tag {
+      position: absolute;
+      top: 0.8rem;
+      right: 0.85rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #9ca3af;
+    }
+
+    /* PARA QUEM É */
+    .para-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+
+    .persona {
+      background: #0b1120;
+      color: #e5e7eb;
+      border-radius: var(--radius-lg);
+      padding: 1.1rem 1.1rem;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .persona-label {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-bottom: 0.3rem;
+    }
+
+    .persona-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .persona-text {
+      font-size: 0.86rem;
+      color: #d1d5db;
+    }
+
+    /* LINHA DO PROCESSO */
+    .linha {
+      background: white;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 1rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(209, 213, 219, 0.8);
+      padding: 1.4rem 1.3rem;
+      background: radial-gradient(circle at top, #fefce8, #ffffff 55%);
+    }
+
+    .timeline-row {
+      display: grid;
+      grid-template-columns: 0.9fr 2.1fr;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 0.65rem 0.4rem;
+    }
+
+    .timeline-row + .timeline-row {
+      border-top: 1px dashed rgba(209, 213, 219, 0.9);
+    }
+
+    .timeline-label {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #92400e;
+      font-weight: 600;
+    }
+
+    .timeline-item-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-item-text {
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    /* FAQ */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1.3fr;
+      gap: 1.8rem;
+      align-items: flex-start;
+    }
+
+    details {
+      background: white;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(209, 213, 219, 0.8);
+      padding: 0.85rem 0.95rem;
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.04);
+      font-size: 0.9rem;
+    }
+
+    details + details {
+      margin-top: 0.7rem;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-arrow {
+      font-size: 1rem;
+      color: #9ca3af;
+      transition: transform 0.2s ease;
+    }
+
+    details[open] .faq-arrow {
+      transform: rotate(90deg);
+    }
+
+    details p {
+      margin-top: 0.5rem;
+      color: var(--muted);
+    }
+
+    .faq-note {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 1.1rem;
+    }
+
+    /* CONTATO */
+    .contato {
+      background: #020617;
+      color: #e5e7eb;
+    }
+
+    .contato-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.8rem;
+      align-items: flex-start;
+    }
+
+    .contato-card {
+      background: #020617;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      padding: 1.3rem 1.4rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contato-field-group {
+      display: grid;
+      gap: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      font-size: 0.85rem;
+    }
+
+    .field label {
+      color: #e5e7eb;
+    }
+
+    .field input,
+    .field textarea,
+    .field select {
+      border-radius: 8px;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      padding: 0.55rem 0.6rem;
+      background: rgba(15, 23, 42, 0.75);
+      color: #f9fafb;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: #6b7280;
+    }
+
+    .field input:focus,
+    .field textarea:focus,
+    .field select:focus {
+      border-color: #facc6b;
+      box-shadow: 0 0 0 1px rgba(250, 204, 107, 0.6);
+      background: #020617;
+    }
+
+    .field small {
+      font-size: 0.75rem;
+      color: #9ca3af;
+    }
+
+    textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .contato-extra {
+      font-size: 0.85rem;
+      color: #9ca3af;
+      margin-top: 1.1rem;
+    }
+
+    .contato-extra strong {
+      color: #e5e7eb;
+    }
+
+    .contato-direct-card {
+      background: #020617;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      padding: 1.2rem 1.35rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contato-direct-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contato-direct-list {
+      list-style: none;
+      display: grid;
+      gap: 0.6rem;
+      font-size: 0.85rem;
+      margin-top: 0.4rem;
+    }
+
+    .contato-direct-list li {
+      display: flex;
+      gap: 0.55rem;
+      align-items: flex-start;
+    }
+
+    .contato-direct-icon {
+      margin-top: 0.1rem;
+      color: #facc6b;
+    }
+
+    .badge-oab {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid rgba(250, 204, 107, 0.7);
+      background: rgba(30, 64, 175, 0.4);
+      margin-top: 0.5rem;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #020617;
+      border-top: 1px solid rgba(31, 41, 55, 1);
+      padding: 1.3rem 0 1.4rem;
+      color: #9ca3af;
+      font-size: 0.8rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: #9ca3af;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      .hero-inner,
+      .alerta-inner,
+      .como-grid,
+      .para-grid,
+      .faq-grid,
+      .contato-inner {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-inner {
+        gap: 2rem;
+      }
+
+      .hero-card {
+        order: -1;
+      }
+
+      .alerta-inner {
+        gap: 1.3rem;
+      }
+
+      .para-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .faq-grid {
+        gap: 1.3rem;
+      }
+
+      .contato-inner {
+        gap: 1.3rem;
+      }
+
+      .timeline-row {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding-top: 2.4rem;
+      }
+
+      .nav-inner {
+        padding-inline: 1.2rem;
+      }
+
+      .hero-card {
+        padding: 1.2rem 1.2rem;
+      }
+
+      .hero-title {
+        font-size: 1.8rem;
+      }
+
+      .hero-actions {
+        gap: 0.7rem;
+      }
+
+      .como-grid,
+      .para-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      section {
+        padding: 2.4rem 0;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .nav-links {
+        display: flex;
+      }
+
+      .nav-phone {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">
+        <div class="logo-mark">PA</div>
+        <div>
+          <div>Palermo Advocacia</div>
+          <div class="logo-sub">Direito de Trânsito &amp; Defesa da CNH</div>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#para-quem">Para quem é</a>
+        <a href="#linha">Etapas</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="nav-cta">
+        <span class="nav-phone">WhatsApp: (24) 99265-5618</span>
+        <button class="btn btn-sm btn-primary" type="button" onclick="openWhatsApp()">
+          <span class="btn-icon">💬</span>
+          Falar agora
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="hero-badge-row">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              Atendimento 100% online em todo o Brasil
+            </div>
+            <div class="hero-badge">
+              +20 anos em Direito Civil &amp; Responsabilidade
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            Evite a <span>suspensão da sua CNH</span> com a indicação correta de condutor.
+          </h1>
+          <p class="hero-subtitle">
+            Se você recebeu notificações de infração ou carta de suspensão, cada dia conta.
+            Nós cuidamos de toda a estratégia jurídica para que a pontuação seja corretamente atribuída ao real motorista.
+          </p>
+
+          <div class="hero-highlight">
+            <div class="hero-highlight-icon">⚠️</div>
+            <div>
+              <strong>Prazo curto para indicar o condutor.</strong> Em muitos casos, o limite é de poucos dias a partir do recebimento da notificação.
+              Perder o prazo pode significar suspensão automática da CNH.
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" onclick="openWhatsApp()">
+              <span class="btn-icon">▶</span>
+              Quero ajuda agora
+            </button>
+            <a href="#como-funciona" class="btn btn-outline">
+              Entender como funciona
+            </a>
+          </div>
+
+          <p class="hero-note">
+            <strong>Primeira avaliação do caso sem compromisso.</strong> Envie a foto da notificação pelo WhatsApp e retornamos com os próximos passos.
+          </p>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span>500+</span>
+              <span>Processos analisados</span>
+            </div>
+            <div class="hero-stat">
+              <span>20+</span>
+              <span>Anos de experiência</span>
+            </div>
+            <div class="hero-stat">
+              <span>98%</span>
+              <span>Clientes que recomendam</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Resumo da solução">
+          <div class="hero-card-tag">Solução especializada • Indicação de Condutor</div>
+          <h2 class="hero-card-title">
+            Transformamos a sua notificação em uma estratégia jurídica eficiente.
+          </h2>
+          <ul class="hero-list">
+            <li>
+              <span class="check">✔</span>
+              <span>Análise detalhada da notificação e do histórico de pontuação da CNH.</span>
+            </li>
+            <li>
+              <span class="check">✔</span>
+              <span>Preparação completa do formulário de indicação do real condutor, com instruções claras.</span>
+            </li>
+            <li>
+              <span class="check">✔</span>
+              <span>Orientação sobre prazos e documentação para evitar nulidades e indeferimentos.</span>
+            </li>
+            <li>
+              <span class="check">✔</span>
+              <span>Atuação estratégica em conjunto com medidas administrativas quando necessário.</span>
+            </li>
+          </ul>
+          <div class="hero-card-footer">
+            <span>Atendimento personalizado e humanizado.</span>
+            <span class="hero-stamp">Palermo Advocacia · OAB/RJ 138.796</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ALERTA -->
+    <section class="alerta">
+      <div class="container alerta-inner">
+        <div>
+          <div class="section-kicker">Atenção imediata</div>
+          <h2 class="section-title">Você recebeu uma notificação de infração ou carta de suspensão?</h2>
+          <p class="section-subtitle">
+            Não ignore a correspondência. O prazo para indicar o condutor costuma ser curto e, depois de vencido, torna-se
+            muito mais difícil reverter a penalidade.
+          </p>
+
+          <div class="alerta-box">
+            <strong>Observe estes sinais de alerta:</strong>
+            <ul class="alerta-list">
+              <li>
+                <span class="alerta-icon">•</span>
+                <span>Notificação de autuação em que você não era o motorista do veículo.</span>
+              </li>
+              <li>
+                <span class="alerta-icon">•</span>
+                <span>Carta informando abertura de processo de suspensão do direito de dirigir.</span>
+              </li>
+              <li>
+                <span class="alerta-icon">•</span>
+                <span>CNH próxima do limite de pontos e novas infrações chegando.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <ul class="alerta-bullets">
+            <li>
+              <span>Prazo limitado para indicar o verdadeiro condutor.</span>
+              <span class="pill">Urgente</span>
+            </li>
+            <li>
+              <span>Indicação feita de forma incorreta pode ser desconsiderada pelo órgão.</span>
+              <span class="pill">Risco de suspensão</span>
+            </li>
+            <li>
+              <span>A atuação jurídica preventiva é mais eficaz do que tentar reverter depois.</span>
+              <span class="pill">Prevenção</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona">
+      <div class="container">
+        <div class="section-kicker">Como funciona na prática</div>
+        <h2 class="section-title">3 passos para regularizar a indicação de condutor</h2>
+        <p class="section-subtitle">
+          Nosso fluxo é simples, seguro e pensado para que você resolva tudo com o mínimo de burocracia possível, mantendo
+          a CNH ativa dentro da legalidade.
+        </p>
+
+        <div class="como-grid">
+          <article class="step">
+            <div class="step-tag">Etapa 01</div>
+            <div class="step-number">1</div>
+            <h3 class="step-title">Análise documental completa</h3>
+            <p class="step-text">
+              Você nos envia a notificação, o documento do veículo e os dados do motorista real.
+              Fazemos a leitura jurídica de prazos, órgão autuador e possibilidades de defesa.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="step-tag">Etapa 02</div>
+            <div class="step-number">2</div>
+            <h3 class="step-title">Preenchimento e instruções de protocolo</h3>
+            <p class="step-text">
+              Preparamos a indicação de condutor conforme as exigências do órgão de trânsito,
+              com orientações passo a passo para assinatura, reconhecimento (se necessário) e envio.
+            </p>
+          </article>
+
+          <article class="step">
+            <div class="step-tag">Etapa 03</div>
+            <div class="step-number">3</div>
+            <h3 class="step-title">Acompanhamento e estratégia complementar</h3>
+            <p class="step-text">
+              Orientamos sobre o acompanhamento do protocolo e, se houver processo de suspensão,
+              avaliamos medidas administrativas adicionais para proteger o seu direito de dirigir.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section id="para-quem">
+      <div class="container">
+        <div class="section-kicker">Para quem é indicado</div>
+        <h2 class="section-title">Essa solução é ideal para você se...</h2>
+        <p class="section-subtitle">
+          A indicação de condutor é um instrumento legítimo, mas precisa ser utilizada com responsabilidade
+          e dentro das regras do Código de Trânsito Brasileiro.
+        </p>
+
+        <div class="para-grid">
+          <article class="persona">
+            <div class="persona-label">Caso 01</div>
+            <h3 class="persona-title">Você empresta o carro com frequência</h3>
+            <p class="persona-text">
+              O veículo está em seu nome, mas outras pessoas dirigem com frequência
+              (familiares, amigos, funcionários) e as multas chegam sempre vinculadas à sua CNH.
+            </p>
+          </article>
+
+          <article class="persona">
+            <div class="persona-label">Caso 02</div>
+            <h3 class="persona-title">Motorista profissional ou aplicativo</h3>
+            <p class="persona-text">
+              Sua renda depende da CNH. Uma suspensão, mesmo que temporária, representa prejuízos
+              imediatos e risco à sua atividade profissional.
+            </p>
+          </article>
+
+          <article class="persona">
+            <div class="persona-label">Caso 03</div>
+            <h3 class="persona-title">CNH próxima do limite de pontos</h3>
+            <p class="persona-text">
+              Você já acumula pontuação significativa e qualquer erro na indicação de condutor pode
+              ser o gatilho para abertura de processo de suspensão.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINHA DO PROCESSO -->
+    <section id="linha" class="linha">
+      <div class="container">
+        <div class="section-kicker">Visão clara das etapas</div>
+        <h2 class="section-title">Linha do tempo do seu caso</h2>
+        <p class="section-subtitle">
+          Cada órgão de trânsito possui prazos e regras específicos, mas de forma geral o caminho segue esta lógica.
+          Nosso trabalho é atuar para que cada etapa seja cumprida da forma mais segura possível.
+        </p>
+
+        <div class="timeline">
+          <div class="timeline-row">
+            <div class="timeline-label">1. Notificação</div>
+            <div>
+              <div class="timeline-item-title">Chegada da notificação de autuação</div>
+              <p class="timeline-item-text">
+                Você recebe a correspondência ou consulta a infração no sistema. É aqui que muitos motoristas erram:
+                deixam o envelope de lado e perdem o prazo de indicação.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-label">2. Análise jurídica</div>
+            <div>
+              <div class="timeline-item-title">Envio de documentos à Palermo Advocacia</div>
+              <p class="timeline-item-text">
+                Recebemos digitalmente a notificação e seus dados. Verificamos prazos, legitimidade da autuação,
+                órgão responsável e melhor estratégia: indicação simples, defesa ou combinação de ambos.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-label">3. Indicação formal</div>
+            <div>
+              <div class="timeline-item-title">Preenchimento e formalização da indicação</div>
+              <p class="timeline-item-text">
+                Elaboramos o formulário ou requerimento conforme o modelo do órgão (DETRAN, órgão municipal, etc.),
+                com orientações sobre assinaturas, reconhecimento de firma (quando exigido) e protocolo.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div class="timeline-label">4. Protocolo &amp; acompanhamento</div>
+            <div>
+              <div class="timeline-item-title">Envio ao órgão de trânsito e retorno</div>
+              <p class="timeline-item-text">
+                Após o protocolo, a indicação é analisada pelo órgão. Orientamos sobre o acompanhamento do resultado
+                e, em caso de indeferimento ou abertura de processo de suspensão, avaliamos novas medidas defensivas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container faq-grid">
+        <div>
+          <div class="section-kicker">Dúvidas frequentes</div>
+          <h2 class="section-title">Perguntas comuns sobre indicação de condutor e CNH suspensa</h2>
+          <p class="section-subtitle">
+            Separei algumas respostas às dúvidas que mais chegam ao escritório. Elas não substituem uma análise individual,
+            mas ajudam a entender melhor o caminho.
+          </p>
+        </div>
+
+        <div>
+          <details>
+            <summary>
+              Em quais situações posso indicar outro condutor?
+              <span class="faq-arrow">›</span>
+            </summary>
+            <p>
+              A indicação é possível quando o proprietário do veículo não era a pessoa que dirigia no momento da infração.
+              É fundamental que a indicação seja verdadeira, com dados corretos do motorista real, sob pena de responsabilidade
+              criminal e administrativa.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Perdi o prazo que constava na notificação. Ainda há o que fazer?
+              <span class="faq-arrow">›</span>
+            </summary>
+            <p>
+              Em regra, o prazo de indicação é preclusivo, ou seja, uma vez vencido, não pode ser reaberto administrativamente.
+              Ainda assim, em alguns casos específicos é possível analisar estratégias jurídicas alternativas. Por isso,
+              quanto antes procurarmos ajuda, maiores são as chances.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Posso indicar um condutor que não tem CNH?
+              <span class="faq-arrow">›</span>
+            </summary>
+            <p>
+              Não. A indicação deve ser feita com base em condutor habilitado e que, de fato, dirigia no momento da infração.
+              Indicações falsas configuram fraude e podem gerar consequências sérias tanto para o proprietário quanto para o indicado.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              O atendimento é presencial ou online?
+              <span class="faq-arrow">›</span>
+            </summary>
+            <p>
+              O atendimento pode ser 100% online. Você envia as notificações e documentos por WhatsApp ou e-mail,
+              realizamos a análise e encaminhamos toda a instrução necessária sem que você precise sair de casa.
+              Se preferir, também podemos agendar atendimento presencial no escritório.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Quanto custa esse tipo de assessoria?
+              <span class="faq-arrow">›</span>
+            </summary>
+            <p>
+              O valor depende da complexidade do caso (quantidade de infrações, existência de processo de suspensão,
+              necessidade de defesas adicionais, entre outros). Na primeira avaliação, apresentamos o orçamento de forma
+              clara e alinhada à tabela de honorários da OAB, sempre com transparência.
+            </p>
+          </details>
+
+          <p class="faq-note">
+            <strong>Importante:</strong> cada caso possui particularidades. Uma orientação genérica pode não servir para a sua situação.
+            Por isso, o ideal é que você envie a notificação para uma análise personalizada.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contato">
+      <div class="container contato-inner">
+        <div>
+          <div class="section-kicker">Contato rápido</div>
+          <h2 class="section-title">Envie sua notificação e receba uma avaliação do seu caso</h2>
+          <p class="section-subtitle" style="color:#9ca3af;">
+            Preencha os dados abaixo ou clique no botão de WhatsApp. Utilize esse canal para encaminhar fotos legíveis
+            da notificação e do documento do veículo.
+          </p>
+
+          <div class="contato-card">
+            <form id="lead-form" onsubmit="handleFormSubmit(event)">
+              <div class="contato-field-group">
+                <div class="field">
+                  <label for="nome">Nome completo</label>
+                  <input id="nome" name="nome" type="text" required placeholder="Digite seu nome" />
+                </div>
+
+                <div class="field">
+                  <label for="telefone">Telefone / WhatsApp</label>
+                  <input id="telefone" name="telefone" type="tel" required placeholder="(DDD) XXXXX-XXXX" />
+                  <small>Usaremos esse contato apenas para tratar do seu caso.</small>
+                </div>
+
+                <div class="field">
+                  <label for="cidade">Cidade / Estado</label>
+                  <input id="cidade" name="cidade" type="text" placeholder="Ex.: Resende/RJ" />
+                </div>
+
+                <div class="field">
+                  <label for="situacao">Situação atual</label>
+                  <select id="situacao" name="situacao">
+                    <option value="">Selecione...</option>
+                    <option value="notificacao">Recebi notificação de infração</option>
+                    <option value="processo-suspensao">Recebi carta de processo de suspensão</option>
+                    <option value="cnh-quase-estourando">Minha CNH está próxima do limite de pontos</option>
+                    <option value="outro">Outro (descrever na mensagem)</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="mensagem">Resumo do caso</label>
+                  <textarea id="mensagem" name="mensagem" placeholder="Conte brevemente o que aconteceu..."></textarea>
+                </div>
+              </div>
+
+              <div style="margin-top:1.1rem;display:flex;flex-wrap:wrap;gap:0.8rem;align-items:center;">
+                <button class="btn btn-primary" type="submit">
+                  Enviar e abrir conversa no WhatsApp
+                </button>
+                <button class="btn btn-outline btn-sm" type="button" onclick="openWhatsApp()">
+                  Falar direto no WhatsApp
+                </button>
+              </div>
+            </form>
+
+            <p class="contato-extra">
+              <strong>Confidencialidade garantida.</strong> Suas informações e documentos são protegidos pelo
+              sigilo profissional da advocacia.
+            </p>
+          </div>
+        </div>
+
+        <aside class="contato-direct-card" aria-label="Dados do escritório">
+          <h3>Palermo Advocacia</h3>
+          <p style="font-size:0.9rem;margin-bottom:0.4rem;">
+            Escritório com atuação focada em Direito Civil, Responsabilidade e consultoria personalizada, com suporte a
+            demandas de trânsito e defesa da CNH.
+          </p>
+          <div class="badge-oab">
+            <span>👩‍⚖️</span>
+            <span>Dra. Camila Palermo · OAB/RJ 138.796</span>
+          </div>
+
+          <ul class="contato-direct-list">
+            <li>
+              <span class="contato-direct-icon">📍</span>
+              <span>Rua Vinte e Nove de Setembro, 53, 2º andar, Campos Elíseos – Resende/RJ</span>
+            </li>
+            <li>
+              <span class="contato-direct-icon">📞</span>
+              <span>(24) 99265-5618 · WhatsApp</span>
+            </li>
+            <li>
+              <span class="contato-direct-icon">✉</span>
+              <span>escritorio@palermoadvocacia.adv.br</span>
+            </li>
+            <li>
+              <span class="contato-direct-icon">⏰</span>
+              <span>Segunda a sexta, das 8h às 18h (horário de Brasília)</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Palermo Advocacia. Todos os direitos reservados.</div>
+      <div class="footer-links">
+        <span>Indicação de condutor · CNH &amp; Direito de Trânsito</span>
+        <a href="https://palermoadvocacia.adv.br" target="_blank" rel="noopener">Site institucional</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const PHONE_E164 = "5524992655618";
+
+  function buildWhatsAppUrl(extraText) {
+    const base = "https://wa.me/" + PHONE_E164;
+    const intro =
+      "Olá, acabei de acessar a landing page de indicação de condutor da Palermo Advocacia e preciso de ajuda com minha CNH.";
+    const text = extraText ? intro + "%0A%0A" + extraText : intro;
+    return base + "?text=" + text;
+  }
+
+  function openWhatsApp(extraText) {
+    window.open(buildWhatsAppUrl(extraText), "_blank");
+  }
+
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    const nome = document.getElementById("nome").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const cidade = document.getElementById("cidade").value.trim();
+    const situacao = document.getElementById("situacao").value;
+    const mensagem = document.getElementById("mensagem").value.trim();
+
+    let texto = "";
+    if (nome) texto += "Nome: " + nome + "%0A";
+    if (telefone) texto += "Telefone/WhatsApp: " + telefone + "%0A";
+    if (cidade) texto += "Cidade/Estado: " + cidade + "%0A";
+    if (situacao) texto += "Situação atual: " + situacao + "%0A";
+    if (mensagem) texto += "%0AResumo do caso:%0A" + mensagem;
+
+    const url = buildWhatsAppUrl(texto);
+    window.open(url, "_blank");
+  }
+
+  // Smooth scroll for in-page links
+  document.addEventListener("click", function (e) {
+    const target = e.target.closest('a[href^="#"]');
+    if (!target) return;
+    const href = target.getAttribute("href");
+    if (href.length > 1) {
+      e.preventDefault();
+      const el = document.querySelector(href);
+      if (el) {
+        window.scrollTo({
+          top: el.offsetTop - 70,
+          behavior: "smooth",
+        });
+      }
+    }
+  });
+
+  // Current year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
