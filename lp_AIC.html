@@ -193,6 +193,13 @@
       font-size: 1.1rem;
     }
 
+    .floating-cta {
+      position: fixed;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      z-index: 70;
+    }
+
     /* HERO */
     .hero {
       background: radial-gradient(circle at top left, #facc6b1f, #020617 60%);
@@ -865,6 +872,11 @@
         gap: 0.7rem;
       }
 
+      .floating-cta {
+        right: 1rem;
+        bottom: 1rem;
+      }
+
       .como-grid,
       .para-grid {
         grid-template-columns: minmax(0, 1fr);
@@ -909,7 +921,7 @@
 
       <div class="nav-cta">
         <span class="nav-phone">WhatsApp: (24) 99265-5618</span>
-        <button class="btn btn-sm btn-primary" type="button" onclick="openWhatsApp()">
+        <button class="btn btn-sm btn-primary floating-cta" type="button" onclick="openWhatsApp()">
           <span class="btn-icon">💬</span>
           Falar agora
         </button>
